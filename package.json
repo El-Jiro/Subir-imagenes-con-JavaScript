@@ -1,0 +1,19 @@
+{
+  "name": "subir-foto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/El-Jiro/Subir-imagenes-con-JavaScript.git"
+  },
+  "author": "Kevin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/El-Jiro/Subir-imagenes-con-JavaScript/issues"
+  },
+  "homepage": "https://github.com/El-Jiro/Subir-imagenes-con-JavaScript#readme"
+}
