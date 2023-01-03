@@ -11,11 +11,11 @@
 
 #customize {
     position: absolute;
-    height: 483px;
-    width: 244px;
+    height: 470px;
+    width: 226px;
     border: none;
     display: flex;
-    border-radius: 10%;
+    border-radius: 30px;
     background-image: none;
     background-repeat: no-repeat;
     background-size: cover;
@@ -24,6 +24,12 @@
     z-index: 0;
     align-content: center;
     align-self: center;
+}
+
+#customize>div {
+    position: absolute;
+    top: -10px;
+    left: -10px;
 }
 
 
@@ -59,8 +65,8 @@ label {
     height: 25px;
     background: red;
     position: absolute;
-    left: 220px;
-    top: 10px;
+    left: 210px;
+    top: -5px;
     z-index: 10;
     cursor: pointer;
     border: none;

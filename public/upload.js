@@ -25,9 +25,6 @@ function subirFoto() {
             return false;
         } else {
             contactAlert.innerHTML = '';
-            if (document.querySelector('#case')) {
-                document.querySelector('#case').remove();
-            }
             document.querySelector('.delPhoto').classList.remove("notBlock");
             var objeto_url = nav.createObjectURL(this.files[0]);
             document.querySelector('#customize').style.backgroundImage = `url(${objeto_url})`
@@ -35,9 +32,6 @@ function subirFoto() {
         }
     } else {
         alert("No se seleccionó ninguna foto");
-        if (document.querySelector('#img')) {
-            document.querySelector('#img').remove();
-        }
     }
 }
 
