@@ -7,21 +7,21 @@
 </head>
 
 <body>
-    <div class="photo">
-        <label for="foto">Foto (570x380)</label>
-        <div class="prevPhoto">
-            <span class="delPhoto notBlock">X</span>
-            <label for="foto"></label>
+    <div id="container">
+        <h3>Sube un diseño personalizado para tu AnnyCases</h3>
+        <div id="customize">
+            <button class="delPhoto notBlock">X</button>
             <div>
-                <img id="img" src="<?= media(); ?>/images/portada_categoria.png">
+                <img id="case" style="z-index: 8; position: absolute;" src="customcase.png" alt="plantilla" width="247" height="486">
             </div>
         </div>
-        <div class="upimg">
-            <input type="file" name="foto" id="foto">
-        </div>
-        <div id="form_alert"></div>
-
+        <form action="">
+            <label for="upload">Subir imagen</label>
+            <input id="upload" type="file" name="personalized" accept="image/png, image/jpg, image/jpeg">
+            <input id="save" type="submit" value="Guardar" disabled>
+        </form>
     </div>
+    <div id="form_alert"></div>
     <script src="upload.js"></script>
 </body>
 

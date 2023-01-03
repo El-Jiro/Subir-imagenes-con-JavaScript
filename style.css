@@ -1,70 +1,80 @@
-.prevPhoto {
+/*Contenedor del formulario*/
+
+#container {
+    position: absolute;
+    height: 85%;
+    width: 40%;
+}
+
+
+/*Div para subir la carcasa personalizada*/
+
+#customize {
+    position: absolute;
+    height: 483px;
+    width: 244px;
+    border: none;
     display: flex;
-    justify-content: space-between;
-    width: 300px;
-    height: 200px;
-    border: 1px solid #CCC;
-    position: relative;
-    cursor: pointer;
-    background: url(../images/portada_categoria.png);
+    border-radius: 10%;
+    background-image: none;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
-    margin: auto;
+    top: 80px;
+    left: 50px;
+    z-index: 0;
+    align-content: center;
+    align-self: center;
 }
 
-.prevPhoto label {
-    cursor: pointer;
-    width: 100%;
-    height: 100%;
+
+/*Botón para subir la imagen*/
+
+#upload {
     position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 2;
+    left: 60px;
+    top: 610px;
 }
 
-.prevPhoto img {
-    width: 100%;
-    height: 100%;
+
+/*Etiqueta del botón*/
+
+label {
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    left: 60px;
+    top: 580px;
 }
 
-.upimg,
-.notBlock {
-    display: none !important;
-}
 
-.errorArchivo {
-    font-size: 16px;
-    font-family: arial;
-    color: #cc0000;
-    text-align: center;
-    font-weight: bold;
-    margin-top: 10px;
-}
+/*Botón para eliminar la imagen*/
 
 .delPhoto {
+    font-weight: bold;
     color: #FFF;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 50%;
+    border-radius: 100%;
     width: 25px;
     height: 25px;
     background: red;
     position: absolute;
-    right: -10px;
-    top: -10px;
+    left: 220px;
+    top: 10px;
     z-index: 10;
+    cursor: pointer;
+    border: none;
 }
 
-#tbl_list_productos img {
-    width: 50px;
+
+/*Botón para guardar la imagen*/
+
+input[type="submit"] {
+    position: absolute;
+    left: 60px;
+    top: 640px;
 }
 
-.imgProductoDelete {
-    width: 175px;
+.notBlock {
+    display: none !important;
 }
