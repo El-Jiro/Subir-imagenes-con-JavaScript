@@ -1,6 +1,7 @@
 /*Contenedor del formulario*/
 
 #container {
+    margin-top: 60px;
     position: absolute;
     height: 85%;
     width: 40%;
@@ -37,7 +38,7 @@
 
 #upload {
     position: absolute;
-    left: 60px;
+    left: 30px;
     top: 610px;
 }
 
@@ -47,7 +48,7 @@
 label {
     font-family: Arial, Helvetica, sans-serif;
     position: absolute;
-    left: 60px;
+    left: 30px;
     top: 580px;
 }
 
@@ -70,14 +71,15 @@ label {
     z-index: 10;
     cursor: pointer;
     border: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 
 /*Botón para guardar la imagen*/
 
-input[type="submit"] {
+input[type="button"] {
     position: absolute;
-    left: 60px;
+    left: 30px;
     top: 640px;
 }
 

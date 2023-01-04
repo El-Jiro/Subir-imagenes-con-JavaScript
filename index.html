@@ -7,9 +7,19 @@
 </head>
 
 <body>
-    <div id="container">
-        <h3>Sube un diseño personalizado para tu AnnyCases</h3>
-        <div id="customize">
+    <h3>Sube un diseño personalizado para tu AnnyCases</h3>
+    <div id="phones">
+        Marca:
+        <select name="brand" id="marca">
+            <option value="" selected="select">Selecciona tu marca</option>
+        </select>
+        <br><br>Modelo:
+        <select name="model" id="modelo">
+            <option value="" selected="select">Selecciona una marca primero</option>
+        </select>
+    </div>
+    <div id="customize">
+        <div id="container">
             <button class="delPhoto notBlock" data-html2canvas-ignore>X</button>
             <div>
                 <img id="case" style="z-index: 8; position: absolute;" src="/public/customcase.png" alt="plantilla" width="247" height="486">
@@ -19,10 +29,15 @@
             <label for="upload">Subir imagen</label>
             <input id="upload" type="file" name="personalized" accept="image/png, image/jpg, image/jpeg">
             <input id="save" type="button" value="Guardar" disabled>
+
         </form>
     </div>
     <div id="form_alert"></div>
-    <script src="/public/upload.js" async></script>
+    <script src="/public/js/upload.js"></script>
+    <script src="/public/js/takeScreenshot.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js"></script>
+
 </body>
 
 
