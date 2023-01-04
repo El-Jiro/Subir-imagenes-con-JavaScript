@@ -3,26 +3,26 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/public/style.css">
 </head>
 
 <body>
     <div id="container">
         <h3>Sube un diseño personalizado para tu AnnyCases</h3>
         <div id="customize">
-            <button class="delPhoto notBlock">X</button>
+            <button class="delPhoto notBlock" data-html2canvas-ignore>X</button>
             <div>
-                <img id="case" style="z-index: 8; position: absolute;" src="customcase.png" alt="plantilla" width="247" height="486">
+                <img id="case" style="z-index: 8; position: absolute;" src="/public/customcase.png" alt="plantilla" width="247" height="486">
             </div>
         </div>
         <form action="">
             <label for="upload">Subir imagen</label>
             <input id="upload" type="file" name="personalized" accept="image/png, image/jpg, image/jpeg">
-            <input id="save" type="submit" value="Guardar" disabled>
+            <input id="save" type="button" value="Guardar" disabled>
         </form>
     </div>
     <div id="form_alert"></div>
-    <script src="upload.js"></script>
+    <script src="/public/upload.js" async></script>
 </body>
 
 
